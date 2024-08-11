@@ -1,10 +1,11 @@
 ---
-title: "The Main Branch"
+title: "The Home Page"
+layout: base.html
 description: "The main branch of the advanced starter kit. Contains a basic 11ty setup for clients not needing much
 additional functionality. Similar to our Intermediate Kits."
 permalink: '/'
 eleventyNavigation:
-    key: 'Main'
+    key: 'Home'
     order: '100'
 ---
 
@@ -12,7 +13,6 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/local.css">
 {% endblock %}
 
-{% extends 'layouts/base.html' %}
 
 {% block body %}
     <!-- ============================================ -->
@@ -22,7 +22,7 @@ eleventyNavigation:
     <section id="hero-1621">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">For any small business need</span>
+                <span class="cs-topper">Uses base.html layout in front-matter</span>
                 <h1 class="cs-title">
                     The CodeStitch Advanced Starter Kit - Main Branch
                 </h1>
