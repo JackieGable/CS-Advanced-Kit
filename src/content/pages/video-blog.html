@@ -1,0 +1,87 @@
+---
+title: "Video Blog"
+description: "Video Blog"
+permalink: 'videos/'
+eleventyNavigation:
+    key: 'videos'
+    order: '500'
+---
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/cms-blog.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    Landing                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Videos</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/CTA/meeting.jpg">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/CTA/meeting.jpg">
+            <img aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/CTA/meeting.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--              Main Blog Content               -->
+    <!-- ============================================ -->
+
+    <div class="blog-container main-content-wrapper">
+        <!--Main content -->
+        <div class="main-content">
+            <!-- ============================================ -->
+            <!--                 Blog Articles                -->
+            <!-- ============================================ -->
+
+            {% if collections.videos | length == 0 %}
+                <h1>No Recent videoss</h1>
+            {% else %}
+                {%- for videos in collections.videos | reverse -%}
+                    <article class="recent-articles">
+                        <!--Main Article Image-->
+                        <picture class="blog-mainImage">
+                            <img
+                            src="{{ videos.data.image }}"
+                            alt="{{ videos.data.imageAlt }}"
+                            width="795"
+                            height="400"
+                            decoding="async" />
+                        </picture>
+                        <!--Article Info-->
+                        <div class="article-group">
+                            <div class="blog-authorGroup">
+                                <!--Author Image-->
+                                <picture class="blog-author-img">
+                                    <img
+                                    src="https://codestitchdemo.netlify.app/images/icon.jpg"
+                                    alt="house"
+                                    width="32"
+                                    height="32"
+                                    decoding="async" />
+                                </picture>
+                                <span class="blog-author">{{ videos.data.author }}</span>
+                                <span aria-hidden="true" class="blog-dot"></span>
+                                <!--Blog Date-->
+                                <span class="blog-date">{{ videos.date | formatDate }}</span>
+     
+                            </div>
+                            <h2 class="blog-h1">
+                                {{ videos.data.title }}
+                            </h2>
+                            <p class="blog-desc">
+                                {{ videos.data.description }}
+                            </p>
+                            <a href="{{ videos.url }}" class="blog-link">Continue Reading</a>
+                        </div>
+                    </article>
+                {%- endfor -%}
+            {% endif %}
+        </div>
+
+        {% include 'components/featured-post.html' %}
+    </div>
+{% endblock %}
