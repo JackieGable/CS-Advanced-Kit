@@ -1,11 +1,11 @@
 ---
-title: Canitiem Saxa
+title: Crazy Stuff Vids
 description: Lorem markdownum trabeati dicere deus.
 author: Code Stitch
 date: 2023-06-08T15:28:08.486Z
 tags:
     - post
-    - featured
+    - videos
 image: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting7.jpg
 imageAlt: People
 ---
