@@ -96,6 +96,14 @@ module.exports = function (eleventyConfig) {
        eleventyConfig.addTemplateFormats("js");
        eleventyConfig.addExtension("js", configJs);     
 
+       
+// Log and inspect data for troubleshooting
+       eleventyConfig.addFilter("debug", (value) => {
+        console.log("DEBUG:", value);
+        return JSON.stringify(value, null, 2);
+    });
+
+    // Return your configurations
     return {
         dir: {
             input: "src",

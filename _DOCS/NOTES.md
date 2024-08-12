@@ -1,8 +1,5 @@
 # Notes about this branch:
 
-8.11.24@9:30pm
-Putting this branch on hold until I can spend more time troubleshooting the issue with markdown not rendering variables and outputting NAN where placeholders were. Also getting errors about rendering templates.
-
 
 1. Layout files are now located here: src/_layouts
 
