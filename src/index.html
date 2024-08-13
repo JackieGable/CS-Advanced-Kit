@@ -1,6 +1,6 @@
 ---
 title: "The Home Page"
-layout: base.html
+layout: base.njk
 description: "The main branch of the advanced starter kit. Contains a basic 11ty setup for clients not needing much
 additional functionality. Similar to our Intermediate Kits."
 permalink: '/'
@@ -22,7 +22,7 @@ eleventyNavigation:
     <section id="hero-1621">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Uses base.html layout in front-matter</span>
+                <span class="cs-topper">Uses base.njk layout in front-matter</span>
                 <h1 class="cs-title">
                     The CodeStitch Advanced Starter Kit - Main Branch
                 </h1>
@@ -87,7 +87,7 @@ eleventyNavigation:
                     Behind the kit is careful management of the file structure, such that all shared code lives in the "main" branch. Each feature then lives on a separate branch, allowing you to choose what capabilities the project requires.
                 </p>
                 <p class="cs-text">
-                    Some files, namely "package.json", "package-lock.json", ".eleventy.js", and "_includes/base.html", require additions to them when merging new branches. Cloning the repo from a template loses all commit history, so conflicts will arise in these files. These can be resolved by ensuring all unique code is merged into the project.
+                    Some files, namely "package.json", "package-lock.json", ".eleventy.js", and "_includes/base.njk", require additions to them when merging new branches. Cloning the repo from a template loses all commit history, so conflicts will arise in these files. These can be resolved by ensuring all unique code is merged into the project.
                 </p>
                 <p class="cs-text">
                     As such, a basic knowledge of Git is required before using this kit, with a solid grasp of how to resolve merge conflicts strongly advisable. You are welcome to merge in feature branches at a later date, after building the project up, but this may result in more complicated merges.
