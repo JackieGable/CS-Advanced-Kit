@@ -78,7 +78,7 @@ module.exports = function (eleventyConfig) {
         eleventyConfig.addPlugin(pluginCritical, configCritical);
     }
 
-
+    eleventyConfig.addWatchTarget("src/assets/sass/");
 
 
     /**
