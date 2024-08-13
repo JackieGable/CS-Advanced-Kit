@@ -1,0 +1,50 @@
+---
+permalink: '/services/{{ title | slug }}.html'
+layout: base.njk
+---
+
+
+
+{% block body %}
+<style>
+	.container { max-width: 800px; width:100%; margin: 1rem auto;}
+	img {
+		width:100%; height:100%; object-fit: cover;
+	}
+	.resp-img-4x3 {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        }
+</style>
+
+<section class="container" style="padding-top:12rem;">
+	<h1>{{ headline }}</h1>
+<p>{{description }}</p>
+<picture class="resp-img-4x3">
+	<source media="(max-width: 600px)" srcset="{{ mainImg.SM }}" />
+	<source media="(min-width: 601px)" srcset="{{ mainImg.MD }}" />
+	<source media="(min-width: 1024px)" srcset="{{ mainImg.LG }}" />
+	<img
+		decoding="async"
+		src="{{ mainImg.SM }}"
+		alt="{{ mainImg.ALT }}"
+		width="2250"
+		height="1500"
+		aria-hidden="true"
+	/>
+</picture>
+<h2>{{subheading}}</h2>
+<p>{{ mainImg.content }}</p>
+
+
+<h3>{{ section2.otherHeading}} </h3>
+<p>{{ section2.content }}</p>
+</section>
+
+
+
+
+{% endblock %}

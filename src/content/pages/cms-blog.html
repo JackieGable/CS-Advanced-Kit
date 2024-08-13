@@ -1,6 +1,6 @@
 ---
 title: "CMS Blog"
-layout: base.html
+layout: base.njk
 description: "The classic CodeStitch blog, controlled by Decap CMS. Lists all blog posts and provides an option to 'feature' posts to a sidebar"
 permalink: 'blog/'
 eleventyNavigation:
@@ -84,6 +84,6 @@ eleventyNavigation:
             {% endif %}
         </div>
 
-        {% include 'components/featured-post.html' %}
+        {% include 'components/featured-post.njk' %}
     </div>
 {% endblock %}

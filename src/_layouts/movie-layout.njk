@@ -1,6 +1,6 @@
 ---
-permalink: '/in-the-news/{{ title | slug }}/index.html'
-layout: base.html
+permalink: '/resources/{{ title | slug }}.html'
+layout: base.njk
 ---
 
 
@@ -22,16 +22,10 @@ layout: base.html
         </picture>
     </section>
 
-    <!-- ============================================ -->
-    <!--              Main Blog Content               -->
-    <!-- ============================================ -->
-
     <div class="blog-container main-content-wrapper">
         <!--Main content -->
         <div class="main-content">
-            <!-- ============================================ -->
-            <!--                  Blog Article                -->
-            <!-- ============================================ -->
+
 
             <article class="blog-article">
                 <!--Main Article Image-->
@@ -42,29 +36,23 @@ layout: base.html
                 <!--Article Info-->
                 <div class="article-group">
                     <h1 class="blog-h1">{{ title }}</h1>
+                    <p>Year: {{ movie1.genre }}</p>
                     <div class="blog-authorGroup">
-                        <!--Author Image-->
-                        <picture class="blog-author-img">
-                            <img
-                            src="https://codestitchdemo.netlify.app/images/icon.jpg"
-                            alt="house"
-                            width="32"
-                            height="32"
-                            decoding="async">
-                        </picture>
-                        <span class="blog-author">{{ author }}</span>
-                        <span aria-hidden="true" class="blog-dot"></span>
-                        <!--Blog Date-->
-                        <span class="blog-date">{{ date | formatDate }}</span>
+                        <span class="blog-author">{{ movie-details.movie1.director }}</span>
+<p>Cast:     {% for actor in movie-details.movie1.cast %}
+    - {{ actor }}
+    {% endfor %}</p>
+
                     </div>
                 </div>
                 <section id="blog-content">
+                    Movie Details:   {{ movie-details.movie1.synopsis }}
                     {{ content | safe }}
                 </section>
             </article>
         </div>
         <!-- End .main-content -->
 
-        {% include 'components/featured-post.html' %}
+    
     </div>
 {% endblock %}

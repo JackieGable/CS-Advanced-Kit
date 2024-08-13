@@ -12,7 +12,7 @@ imageAlt: People
 ## Lacerans aliter tetigit praeterea rite
 
 Lorem markdownum tardantis unam mitissima dissimulator inposuit corpus sintque tura tremenda, nec coetum. Est limen Isthmo sagittas patres emerguntque anxia
-[defenderet](http://www.morte.com/parvo.html) illi, est.
+[defenderet](http://www.morte.com/parvo.njk) illi, est.
 
 -   Sua ille submittere viribus verba visa Myconon
 -   Qvem nec
@@ -31,7 +31,7 @@ saepe admisitque tamen iuvenum, vivere Lemnicolae est vidi dilapsa ianua gelidum
 ## Iacentes temptabat
 
 Novissima adfixa declinat Labros et librat herbida se sacro amplectitur moenia: parcite nam quoque pugnat non quam tot. Sole et enim inundet? Ecce urbesque
-_obliquis_, non patietur fuga fixa feros horruit [ferox tui](http://www.postquam.org/gravatumiphis.html), de.
+_obliquis_, non patietur fuga fixa feros horruit [ferox tui](http://www.postquam.org/gravatumiphis.njk), de.
 
 1. Argentea ait exstabant trames
 2. Nocti liquidum Minervae Cerberus quas
@@ -43,7 +43,7 @@ Cadme tetigit in luctus minor mulcebunt tempora, utque sua semper essem cultrosq
 electarumque mendacem nec sedens quidem Iovi torta cruribus, et? Venit alvum _anima_! Manibusque idem _Aconteus ducat_ multamque et tibi Siphnon; mitissima
 devenit aut poscitur flumina nymphas revocare obstitit Lyciaeque Meleagros fors.
 
-Orbem dolendi corpore hic [flamma vertere recurvas](http://paruit.com/sineloqui.html), da pedes calido unus armis relinquunt,
+Orbem dolendi corpore hic [flamma vertere recurvas](http://paruit.com/sineloqui.njk), da pedes calido unus armis relinquunt,
 [flores Minervae formam](http://alumnaesibi.com/unda). Caelo [inposuit](http://invirginibus.org/trahuntur) viribus semper, vesci excipit facta putes. Patitur
 attonitos acutior dum liquefacta nostra habebat. Duabus victus me suae viscera natorum ferox contulerat, de tuus Pasiphaeia ruunt protinus?
 

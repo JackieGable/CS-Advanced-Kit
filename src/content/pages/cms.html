@@ -1,6 +1,6 @@
 ---
 title: "The CMS Branch"
-layout: base.html
+layout: base.njk
 description: "The CMS branch of the advanced starter kit. Demonstrates the full capabilities of Decap CMS by supplying some common small-business use cases."
 permalink: 'cms/'
 eleventyNavigation:
@@ -61,7 +61,7 @@ eleventyNavigation:
                 </p>
                 <ol>
                     <li>
-                        The markdown files supply the post-specific data (title, date, post body, etc.). The title and description defined here is pulled up to base.html and is what's used here, instead of the page frontmatter like the files in content/pages. This has the higher priority.
+                        The markdown files supply the post-specific data (title, date, post body, etc.). The title and description defined here is pulled up to base.njk and is what's used here, instead of the page frontmatter like the files in content/pages. This has the higher priority.
                     </li>
                     <li>
                         The blog.json directory data file tells all the markdown files to use the post layout. This is so the layout isn't exposed in the CMS via the .md files. Additionally, the "post" tag is defined in the blog.json, allowing all blog posts to be collected via "collections.post". This has the lower priority.

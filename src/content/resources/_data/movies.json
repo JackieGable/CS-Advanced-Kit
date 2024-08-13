@@ -1,0 +1,17 @@
+{
+    "movies": [
+      {
+        "id": "movie1",
+        "title": "Inception",
+        "year": "2010",
+        "genre": "Sci-Fi"
+      },
+      {
+        "id": "movie2",
+        "title": "The Matrix",
+        "year": "1999",
+        "genre": "Action"
+      }
+    ]
+  }
+  

@@ -2,7 +2,7 @@
 
 ## assets/favicons
 
-For the website favicons. Use the below tool to generate favicons from one image, and paste the code in your base.html:
+For the website favicons. Use the below tool to generate favicons from one image, and paste the code in your base.njk:
 
 https://realfavicongenerator.net/
 

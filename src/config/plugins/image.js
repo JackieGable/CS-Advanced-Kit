@@ -27,7 +27,7 @@
  *      Instructions for using this plugin (CS-TODO):
  *          1. To prevent unintentionally turning <img>s that should stay as <img> tags (typically icons), you
  *             can use the below regex to do a find-and-replace across the project. You'll need to use the
- *             "square and star" icon to turn on regex mode, and use the "..." to only include .html files:
+ *             "square and star" icon to turn on regex mode, and use the "..." to only include .njk files:
  *
  *                  Find: <img(.+)>(?!(.*)\n(.*)</picture>)
  *                  Replace: <img$1 data-img2picture-ignore>

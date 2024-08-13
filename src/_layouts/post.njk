@@ -1,6 +1,6 @@
 ---
-permalink: '/blog/{{ title | slug }}/index.html'
-layout: base.html
+permalink: '/blog/{{ title | slug }}/index.njk'
+layout: base.njk
 ---
 
 
@@ -65,6 +65,6 @@ layout: base.html
         </div>
         <!-- End .main-content -->
 
-        {% include 'components/featured-post.html' %}
+        {% include 'components/featured-post.njk' %}
     </div>
 {% endblock %}

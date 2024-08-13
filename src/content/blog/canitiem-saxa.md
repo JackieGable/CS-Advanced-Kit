@@ -12,7 +12,7 @@ imageAlt: People
 
 ## Aut inter Petraeum
 
-Lorem markdownum trabeati dicere [deus](http://www.aetatis.org/pugnacem.html) traxit certus Scythiam certum, illi mulces. Et nihil dolores? Si scopulis somnus
+Lorem markdownum trabeati dicere [deus](http://www.aetatis.org/pugnacem.njk) traxit certus Scythiam certum, illi mulces. Et nihil dolores? Si scopulis somnus
 pinguis cadentem, commemorare humanas nepotum [nec doce](http://totoalbi.com/suisfactis), Aiax ipsum! Gente conatur committere esse _efficiens_ fuerat, armis
 male simulasse, Libys polo.
 
@@ -43,7 +43,7 @@ tetigit. Huc ferae **refugit**, proles, suggerit videt reliquit, et.
 
 Ubi aequoreae, vult huic, transibant dederat, liceret: vidi sacra o securi turaque. Superat hebeti, contortam honoris, di tibi. Vertex exsiluere.
 
-Et patriaeque cum differt tenet [cupies](http://contendere.net/datque.html) contra sic et locuta Aegides opusque. Quamvis Teucri secernunt corpora committitur,
+Et patriaeque cum differt tenet [cupies](http://contendere.net/datque.njk) contra sic et locuta Aegides opusque. Quamvis Teucri secernunt corpora committitur,
 **animalibus tanto** Palladis spectatae tamen invida formae Cecropidum pandis, duc Aonius plumbo. Poplitibus stipite fugiebant et rapuere missa iaculabile
 adunco. Fui caerula territa; latus non reddita, si tecum placet, sepulcrum. Anaxaretes terga patet, figit aulaea nunc quaerentes equo Oebalio Triptolemus
 exilium tamen preces, vidi alma domestica.

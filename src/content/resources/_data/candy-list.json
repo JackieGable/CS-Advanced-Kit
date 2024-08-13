@@ -1,0 +1,28 @@
+{
+    "butterfinger": {
+      "name": "Butterfinger",
+      "flavor": ["peanut butter", "chocolate", "nougat"],
+      "texture": "crunchy",
+      "imageURL": "https://res.cloudinary.com/demo/image/upload/w_200/f_auto,q_auto/apple.jpg"
+
+    },
+    "gummy-bears": {
+      "name": "Gummy Bears",
+      "flavor": ["assorted", "licorice", "candy apple"],
+      "texture": "chewy",
+      "imageURL": "https://res.cloudinary.com/demo/image/upload/w_200/f_auto,q_auto/pizza.jpg"
+    },
+    "starburst": {
+      "name": "Starburst",
+      "flavor": ["cherry", "grape", "watermelon"],
+      "texture": "chewy",
+      "imageURL": "https://picsum.photos/200/200?random=1"
+    },
+    "jelly-belly": {
+      "name": "Jelly Beans",
+      "flavor": ["assorted", "licorice", "cotton candy"],
+      "texture": "chewy",
+      "imageURL": "https://picsum.photos/200/200?random=2"
+    }
+  }
+  

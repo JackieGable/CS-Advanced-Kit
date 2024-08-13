@@ -1,0 +1,13 @@
+{
+    "movie1": {
+      "director": "Christopher Nolan",
+      "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"],
+      "synopsis": "A thief who enters the dreams of others to steal secrets."
+    },
+    "movie2": {
+      "director": "The Wachowskis",
+      "cast": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
+      "synopsis": "A hacker discovers the true nature of his reality."
+    }
+  }
+  

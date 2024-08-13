@@ -1,0 +1,210 @@
+---
+permalink: '/services/{{ title | slug }}.html'
+layout: base.njk
+preload:
+  - '/assets/images/hero.webp'
+---
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/services.css" />
+{% endblock %} {% block body %}
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-82">
+	<div class="cs-container">
+		<h1 class="cs-title">{{ headline }}</h1>
+		<p class="cs-text">{{ description }}</p>
+		<a href="/contact" class="cs-button-solid">Get a Free Estimate</a>
+	</div>
+
+	<!-- Background Image -->
+	<picture class="cs-background">
+		<source media="(max-width: 600px)" srcset="/assets/images/hero-m.webp" />
+		<source media="(min-width: 601px)" srcset="/assets/images/hero.webp" />
+		<img
+			decoding="async"
+			src="/assets/images/hero.webp"
+			alt="kitchen"
+			width="2250"
+			height="1500"
+			aria-hidden="true"
+		/>
+	</picture>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="RPsbs-1459">
+	<div class="cs-container">
+		<!-- Left Image Section -->
+		<div class="cs-image-group">
+			<picture class="cs-picture cs-picture1">
+				<source
+					media="(max-width: 600px)"
+					srcset="
+						{{ featuredImage1.images[0]}}
+					"
+				/>
+				<source
+					media="(min-width: 601px)"
+					srcset="
+						{{ featuredImage1.images[0]}}
+					"
+				/>
+				<img
+					loading="lazy"
+					decoding="async"
+					src="{{ featuredImage1.images[0]}}"
+					alt="featuredImage1"
+					width="500"
+					height="729"
+					aria-hidden="true"
+				/>
+			</picture>
+			<picture class="cs-picture cs-picture2">
+				<source
+					media="(max-width: 600px)"
+					srcset="
+						{{ featuredImage1.images[1]}}
+					"
+				/>
+				<source
+					media="(min-width: 601px)"
+					srcset="
+						{{ featuredImage1.images[1]}}
+					"
+				/>
+				<img
+					loading="lazy"
+					decoding="async"
+					src="{{ featuredImage1.images[1]}}"
+					alt="windmill"
+					width="378"
+					height="460"
+					aria-hidden="true"
+				/>
+			</picture>
+		</div>
+		<!-- Featured Image Section-->
+		<div class="cs-content">{{ featuredImage1.content | md | safe}}</div>
+	</div>
+	<picture class="cs-background">
+		<!--Mobile Image-->
+		<source media="(max-width: 600px)" srcset="/assets/images/bobcat.webp" />
+		<!--Tablet and above Image-->
+		<source media="(min-width: 601px)" srcset="/assets/images/bobcat.webp" />
+		<img
+			loading="lazy"
+			decoding="async"
+			src="/assets/images/bobcat.webp"
+			alt="Bobcat"
+			width="1280"
+			height="568"
+		/>
+	</picture>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="RPsbsr-1459">
+	<div class="cs-container">
+		<!-- Left Image Section -->
+		<div class="cs-image-group">
+			<picture class="cs-picture cs-picture1">
+				<source
+					media="(max-width: 600px)"
+					srcset="
+						{{ featuredImage2.images[0] }}
+					"
+				/>
+				<source
+					media="(min-width: 601px)"
+					srcset="
+						{{ featuredImage2.images[0] }}
+					"
+				/>
+				<img
+					loading="lazy"
+					decoding="async"
+					src="{{ featuredImage2.images[0] }}"
+					alt="featuredImage2"
+					width="500"
+					height="729"
+					aria-hidden="true"
+				/>
+			</picture>
+			<picture class="cs-picture cs-picture2">
+				<source
+					media="(max-width: 600px)"
+					srcset="
+						{{ featuredImage2.images[1] }}
+					"
+				/>
+				<source
+					media="(min-width: 601px)"
+					srcset="
+						{{ featuredImage2.images[1] }}
+					"
+				/>
+				<img
+					loading="lazy"
+					decoding="async"
+					src="{{ featuredImage2.images[1] }}"
+					alt="featuredImage2"
+					width="378"
+					height="460"
+					aria-hidden="true"
+				/>
+			</picture>
+		</div>
+		<!-- Right Content Section-->
+		<div class="cs-content">{{ featuredImage2.content | md | safe}}</div>
+	</div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+{% set images_per_row = 3 %}
+<section id="gallery-48">
+	<div class="cs-container">
+		<div class="cs-content">
+			<span class="cs-topper">{{ gallery.header.subtitle }}</span>
+			<h2 class="cs-title">{{ gallery.header.title }}</h2>
+		</div>
+		<div class="cs-image-group">
+			{% for image in gallery.images %} {% if loop.index0 % images_per_row == 0
+			%}
+			<div class="cs-row cs-row-{{ loop.index0 // images_per_row + 1}}">
+				{% endif %}
+
+				<picture
+					class="cs-picture cs-picture-{{ (loop.index0 % images_per_row) + 1 }}"
+				>
+					<source media="(max-width: 600px)" srcset="{{ image.image }}" />
+					<source media="(min-width: 601px)" srcset="{{ image.image }}" />
+					<img
+						loading="lazy"
+						decoding="async"
+						src="{{ image.image }}"
+						alt="Gallery Image"
+						width="420"
+						height="567"
+					/>
+				</picture>
+
+				{% if loop.index0 % images_per_row == images_per_row - 1 or loop.last %}
+			</div>
+			{% endif %} {% endfor %}
+		</div>
+		<a href="" class="cs-button-solid">View Full Gallery</a>
+	</div>
+</section>
+
+{% endblock %}

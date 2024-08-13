@@ -1,0 +1,72 @@
+---
+title: "Resources Blog"
+layout: base.njk
+description: ""
+permalink: 'resources-blog/'
+eleventyNavigation:
+    key: 'Resources Blog'
+    order: '800'
+    parent: 'resources'
+---
+
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/cms-blog.css">
+{% endblock %}
+
+{% block body %}
+
+
+
+    <div class="blog-container main-content-wrapper">
+        <!--Main content -->
+        <div class="main-content">
+
+
+            {% if collections.resources | length == 0 %}
+                <h1>No Recent Posts</h1>
+            {% else %}
+                {%- for post in collections.resources | reverse -%}
+                    <article class="recent-articles">
+                        <!--Main Article Image-->
+                        <picture class="blog-mainImage">
+                            <img
+                            src="{{ resources.data.image }}"
+                            alt="{{ resources.data.imageAlt }}"
+                            width="795"
+                            height="400"
+                            decoding="async" />
+                        </picture>
+                        <!--Article Info-->
+                        <div class="article-group">
+                            <div class="blog-authorGroup">
+                                <!--Author Image-->
+                                <picture class="blog-author-img">
+                                    <img
+                                    src="https://codestitchdemo.netlify.app/images/icon.jpg"
+                                    alt="house"
+                                    width="32"
+                                    height="32"
+                                    decoding="async" />
+                                </picture>
+                                <span class="blog-author">{{ resources.data.author }}</span>
+                                <span aria-hidden="true" class="blog-dot"></span>
+                                <!--Blog Date-->
+                                <span class="blog-date">{{ resources.date | formatDate }}</span>
+     
+                            </div>
+                            <h2 class="blog-h1">
+                                {{ resources.data.title }}
+                            </h2>
+                            <p class="blog-desc">
+                                {{ resources.data.description }}
+                            </p>
+                            <a href="{{ resources.url }}" class="blog-link">Continue Reading</a>
+                        </div>
+                    </article>
+                {%- endfor -%}
+            {% endif %}
+        </div>
+
+    </div>
+{% endblock %}
