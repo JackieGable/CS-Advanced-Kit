@@ -1,0 +1,47 @@
+{
+	"name": "The Stone Store",
+	"url": "https://thestonestore.com",
+	"email": "sales@thestonestore.com",
+	"phoneForTel": "410-766-4242",
+	"phoneFormatted": "(410) 766-4242",
+	"phoneLinkToolTip": "Call The Stone Store at 410-766-4242",
+	"RFQLink": "https://thestonestore.com/request-a-quote",
+	"CCPaytLink": "https://fs10.formsite.com/Aggtrans-TheStoneStore/one-time-creditcard-auth/index.html",
+	"CCPaytToolTip": "Make A Payment on your account at The Stone Store",
+	"metaDescription": "For over 27 years, The Stone Store has been serving the MD/DC/VA/PA Metro Area with the largest and most unique selection of stone products for construction, landscaping and decor.",
+	"metaKeywords": "stone, sand , gravel",
+	"city-state": "Harmans, MD",
+	"address": {
+		"lineOne": "7535 Railroad Ave",
+		"lineTwo": ".",
+		"city": "Harmans",
+		"state": "MD",
+		"zip": "21077",
+		"addressALL": "7535 Railroad Ave Harmans MD 21077",
+		"mapLink": "https://www.google.com/maps/@39.1546353,-76.6983885,17z"
+	},
+	"logos": {
+		"svg": "https://res.cloudinary.com/aggtrans/image/upload/v1679073005/logos/Stone_Store_Logo_Original.svg",
+		"appleIcon": ".",
+		"logoSM": "",
+		"logoLG": "",
+		"zip": "",
+		"logoAltTxt": "Logo for The Stone Store"
+	},
+	"favicons": {
+		"appleTouchIcon": "https://thestonestore.com/images/favicon/apple-touch-icon.png",
+		"fav32x32": "https://thestonestore.com/images/favicon/favicon-32x32.png",
+		"fav16x16": "https://thestonestore.com/images/favicon/favicon-16x16.png",
+		"faviconIco": "https://thestonestore.com/images/favicon/favicon.ico"
+	},
+	"social": {
+		"facebook": "https://www.facebook.com/",
+		"twitter": "https://twitter.com/",
+		"instagram": "https://www.instagram.com/",
+		"youtube": "."
+	},
+	"domain": "https://aggtrans.com",
+	"storeHours": "Open Monday — Friday: 7:00AM - 6:00PM, Saturday: 8:00AM - 3:00PM",
+	"companySlogan": "Products from the Earth for Construction, Landscape and Decor",
+	"cloudinaryPath": "https://res.cloudinary.com/aggtrans/image/upload"
+}
