@@ -13,10 +13,23 @@ const configImage = require("./src/config/plugins/image");
 const configCss = require("./src/config/eleventy/css");
 const configJs = require("./src/config/eleventy/javascript");
 const moment = require('moment');
+const markdownIt = require("markdown-it");
 
 const isProduction = process.env.ELEVENTY_ENV === "PROD";
 
 module.exports = function (eleventyConfig) {
+
+    let markdownLibrary = markdownIt({
+        html: true,
+        breaks: true,
+        linkify: true
+    });
+
+    eleventyConfig.addFilter("md", function(value) {
+        return markdownLibrary.render(value);
+    });
+
+
 
     eleventyConfig.addFilter('formatDate', function(date) {
         return moment(date).format('MMMM D, YYYY');
@@ -103,8 +116,9 @@ module.exports = function (eleventyConfig) {
         return JSON.stringify(value, null, 2);
     });
 
-    // Return your configurations
+    // Return your configurations, accept the default template engines
     return {
+        templateFormats: [ "md", "njk", "html", "liquid" ],    
         dir: {
             input: "src",
             output: "public",
@@ -113,5 +127,8 @@ module.exports = function (eleventyConfig) {
             data: "_data",
         },
         htmlTemplateEngine: "njk",
+        markdownTemplateEngine: "njk",
+        dataTemplateEngine: "njk",
     };
 };
+
