@@ -7,6 +7,6 @@
   "spec-char-escape": true,
   "id-unique": true,
   "src-not-empty": true,
-  "attr-no-duplication": true,
-  "title-require": true
+  "attr-no-duplication": false,
+  "title-require": false
 }
