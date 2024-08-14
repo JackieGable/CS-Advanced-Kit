@@ -2,7 +2,7 @@
 
 To see a visual display of how markdown works with the layout file (mostly by the front-matter in the markdown file) then gets rendered to the html file. See: C:\Users\JapperCatz\Desktop\How the markdown page is rendered -VISUAL demo.JPG
 
-8.12.24
+### 8.12.24
 1. Successfully fixed the markdown reading issue by updating .eleventy.js file and renaming all the includes and layout files to .njk extension.
 2. content/pages: still has .html extension
 3. collections use .md extension
