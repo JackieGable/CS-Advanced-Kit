@@ -1,0 +1,1011 @@
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-82 {
+    /* Centers button */
+    text-align: center;
+    /* 144px - 300px - leaving extra space for the navigation */
+    padding: clamp(12rem, 25.95vw, 18.75rem) 1rem 0;
+    /* 130px - 200px */
+    padding-bottom: clamp(8.125rem, 12.5vw, 25em);
+    position: relative;
+    z-index: 1;
+  }
+  #hero-82 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  #hero-82 .cs-background:before {
+    /* Overlay */
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* prevents the cursor from interacting with it */
+    pointer-events: none;
+  }
+  #hero-82 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #hero-82 .cs-container {
+    width: 100%;
+    max-width: 67.5rem;
+    margin: auto;
+  }
+  #hero-82 .cs-title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    max-width: 51.8125rem;
+    /* 16px - 24px */
+    margin: 0 auto clamp(1rem, 4vw, 1.5rem);
+    color: #fff;
+    position: relative;
+  }
+  #hero-82 .cs-title:after {
+    /* Divider Line */
+    content: '';
+    width: 6.25rem;
+    height: 0.5rem;
+    /* 16px - 24px */
+    margin: clamp(1rem, 4vw, 1.5rem) auto clamp(1rem, 4vw, 1.5rem);
+    background: var(--primary);
+    opacity: 1;
+    position: relative;
+    display: block;
+  }
+  #hero-82 .cs-text {
+    /* 16px - 25px */
+    font-size: clamp(1rem, 1.95vw, 1.5625rem);
+    line-height: 1.5em;
+    text-align: center;
+    width: 100%;
+    /* 464px - 800px */
+    max-width: clamp(29rem, 60vw, 50rem);
+    margin: 0 auto;
+    /* 40px - 48px */
+    margin-bottom: clamp(2.5rem, 4vw, 3rem);
+    color: #fff;
+  }
+  #hero-82 .cs-button-solid {
+    font-size: 1rem;
+    line-height: 3.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    margin: auto;
+    color: #fff;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-82 .cs-button-solid:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #hero-82 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #hero-82:before,
+  body.dark-mode #hero-82:after {
+    background: var(--dark);
+  }
+  body.dark-mode #hero-82 .cs-background:before {
+    opacity: 0.85;
+  }
+}
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbs-1459,
+  #RPsbsr-1459 {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 1;
+  }
+  #RPsbs-1459 .cs-container,
+  #RPsbsr-1459 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #RPsbs-1459 .cs-content,
+  #RPsbsr-1459 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 32.625rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #RPsbs-1459 .cs-text,
+  #RPsbsr-1459 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #RPsbs-1459 .cs-text:last-of-type,
+  #RPsbsr-1459 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #RPsbs-1459 .cs-ul,
+  #RPsbsr-1459 .cs-ul {
+    width: 100%;
+    margin: 0 0 2rem 0;
+    padding-left: 1.25rem;
+    /* prevents padding from affecting width and height */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  #RPsbs-1459 .cs-li,
+  #RPsbsr-1459 .cs-li {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    list-style: none;
+    text-align: left;
+    width: 100%;
+    max-width: 25rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+    position: relative;
+  }
+  #RPsbs-1459 .cs-li:before,
+  #RPsbsr-1459 .cs-li:before {
+    /* bullet */
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 0.625rem;
+    left: -0.9375rem;
+  }
+  #RPsbs-1459 .cs-button-solid,
+  #RPsbsr-1459 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #RPsbs-1459 .cs-button-solid:before,
+  #RPsbsr-1459 .cs-button-solid:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #RPsbs-1459 .cs-button-solid:hover:before,
+  #RPsbsr-1459 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #RPsbs-1459 .cs-image-group,
+  #RPsbsr-1459 .cs-image-group {
+    /* scaling the font size with the view width, removed at desktop */
+    font-size: 1rem;
+    /* using ems so we can use font size to scale the whole section */
+    width: 40.625em;
+    height: 45.5625em;
+    position: relative;
+  }
+  #RPsbs-1459 .cs-picture,
+  #RPsbsr-1459 .cs-picture {
+    border-radius: 1.5em;
+    /* clips img tag corners */
+    overflow: hidden;
+    position: absolute;
+    display: block;
+  }
+  #RPsbs-1459 .cs-picture img,
+  #RPsbsr-1459 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act like a background image */
+    object-fit: cover;
+  }
+  #RPsbs-1459 .cs-picture1,
+  #RPsbsr-1459 .cs-picture1 {
+    width: 32.625em;
+    height: 45.5625em;
+    left: 0;
+    top: 0;
+  }
+  #RPsbs-1459 .cs-picture2,
+  #RPsbsr-1459 .cs-picture2 {
+    width: 23.625em;
+    height: 28.75em;
+    right: 0;
+    bottom: 6.25em;
+  }
+  #RPsbs-1459 .cs-background,
+  #RPsbsr-1459 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #RPsbs-1459 .cs-background:before,
+  #RPsbsr-1459 .cs-background:before {
+    /* background color overlay */
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    /* prevents the mouse from interacting with it */
+    pointer-events: none;
+    opacity: 0.94;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #RPsbs-1459 .cs-background img,
+  #RPsbsr-1459 .cs-background img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #RPsbs-1459 .cs-container,
+  #RPsbsr-1459 .cs-container {
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 3.25rem;
+  }
+  #RPsbs-1459 .cs-content,
+  #RPsbsr-1459 .cs-content {
+    width: 40%;
+    padding: 3rem 0;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    align-self: center;
+  }
+  #RPsbs-1459 .cs-image-group,
+  #RPsbsr-1459 .cs-image-group {
+    font-size: 1rem;
+    width: 50vw;
+    max-width: 40.625rem;
+    height: auto;
+    /* 580px - 729px */
+    min-height: clamp(36.25rem, 50vw, 45.5625rem);
+    flex: none;
+    display: flex;
+  }
+  #RPsbs-1459 .cs-picture1,
+  #RPsbsr-1459 .cs-picture1 {
+    width: 83%;
+    height: auto;
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+  #RPsbs-1459 .cs-picture2,
+  #RPsbsr-1459 .cs-picture2 {
+    width: 60%;
+    height: 57%;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #RPsbs-1459 .cs-title,
+  body.dark-mode #RPsbsr-1459 .cs-title,
+  body.dark-mode #RPsbs-1459 .cs-text,
+  body.dark-mode #RPsbsr-1459 .cs-text,
+  body.dark-mode #RPsbs-1459 .cs-li,
+  body.dark-mode #RPsbsr-1459 .cs-li {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #RPsbs-1459 .cs-title:before,
+  body.dark-mode #RPsbsr-1459 .cs-title:before,
+  body.dark-mode #RPsbs-1459 .cs-text:before,
+  body.dark-mode #RPsbsr-1459 .cs-text:before,
+  body.dark-mode #RPsbs-1459 .cs-li:before,
+  body.dark-mode #RPsbsr-1459 .cs-li:before {
+    background-color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #RPsbs-1459 .cs-background:before,
+  body.dark-mode #RPsbsr-1459 .cs-background:before {
+    background-color: var(--dark);
+  }
+}
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbsr-1459 .cs-picture1 {
+    left: auto;
+    right: 0;
+  }
+  #RPsbsr-1459 .cs-picture2 {
+    right: auto;
+    left: 0;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #RPsbsr-1459 .cs-image-group {
+    justify-content: flex-end;
+    /* sends it to the right in the 2nd position */
+    order: 2;
+  }
+}
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #gallery-48 {
+    padding: var(--sectionPadding);
+    position: relative;
+  }
+  #gallery-48 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #gallery-48 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #gallery-48 .cs-title {
+    margin: 0;
+    max-width: 20ch;
+  }
+  #gallery-48 .cs-image-group {
+    /* used rem so it doesn't scale with the font size of on parent */
+    font-size: min(1.1vw, 1em);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* 8px - 20px */
+    gap: clamp(0.5rem, 2vw, 1.25rem);
+  }
+  #gallery-48 .cs-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* 8px - 20px */
+    gap: clamp(0.5rem, 2vw, 1.25rem);
+  }
+  #gallery-48 .cs-picture {
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+  #gallery-48 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #gallery-48 .cs-row-1 .cs-picture-1 {
+    height: 35.4375em;
+  }
+  #gallery-48 .cs-row-1 .cs-picture-2 {
+    height: 39.3125em;
+  }
+  #gallery-48 .cs-row-1 .cs-picture-3 {
+    height: 32em;
+  }
+  #gallery-48 .cs-row-2 .cs-picture-1 {
+    height: 30.75em;
+  }
+  #gallery-48 .cs-row-2 .cs-picture-2 {
+    height: 32.3125em;
+  }
+  #gallery-48 .cs-row-2 .cs-picture-3 {
+    height: 39.3125em;
+  }
+  #gallery-48 .cs-row-3 .cs-picture-1 {
+    height: 39.0625em;
+  }
+  #gallery-48 .cs-row-3 .cs-picture-2 {
+    height: 28.25em;
+  }
+  #gallery-48 .cs-row-3 .cs-picture-3 {
+    height: 39.3125em;
+  }
+  #gallery-48 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #gallery-48 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #gallery-48 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+}
+/* Dark mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #gallery-48 .cs-title {
+    color: var(--bodyTextColorWhite);
+  }
+}
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #gallery-43 {
+    padding: var(--sectionPadding);
+    position: relative;
+    /* Prevents overflow from the image going off screen */
+    overflow: hidden;
+  }
+  #gallery-43 .cs-container {
+    width: 100%;
+    max-width: 69rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #gallery-43 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #gallery-43 .cs-image-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 16px - 20px */
+    gap: clamp(1rem, 1.5vw, 1.25rem);
+  }
+  #gallery-43 .cs-item {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    margin: 0;
+    position: relative;
+    display: block;
+  }
+  #gallery-43 .cs-item:hover .cs-hover-box {
+    opacity: 1;
+  }
+  #gallery-43 .cs-item:hover .cs-icon {
+    /* return to original position */
+    transform: rotateY(0);
+  }
+  #gallery-43 .cs-item:hover .cs-h3 {
+    opacity: 1;
+    /* Return to original position */
+    transform: translateY(0);
+  }
+  #gallery-43 .cs-item:hover .cs-hover-box-text {
+    opacity: 1;
+    /* Return to original position */
+    transform: translateY(0);
+  }
+  #gallery-43 .cs-picture {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+  }
+  #gallery-43 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #gallery-43 .cs-hover-box {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    background-color: rgba(187, 147, 34, 0.9);
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Prevents padding from contributing to height & width */
+    box-sizing: border-box;
+    /* Sets stage for 3d transform animation */
+    perspective: 700px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /* prevents mouse from being able to interact with these elements */
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  #gallery-43 .cs-icon {
+    /* 50px - 60px */
+    width: clamp(3.125rem, 5vw, 3.75rem);
+    height: clamp(3.125rem, 5vw, 3.75rem);
+    /* 16px - 32px */
+    margin-bottom: clamp(1rem, 5vw, 2rem);
+    border-radius: 50%;
+    background-color: #fff;
+    outline: 0.5rem solid rgba(255, 255, 255, 0.7);
+    /* Start with the icon box rotated 90deg */
+    transform: rotateY(90deg);
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    transition: transform 0.5s;
+  }
+  #gallery-43 .cs-icon img {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  #gallery-43 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 auto;
+    max-width: 16.875rem;
+    color: #fff;
+    /* make starting position down 10px and invisible */
+    opacity: 0;
+    transform: translateY(0.625rem);
+    margin-bottom: 0.5rem;
+    transition: opacity 0.3s, transform 0.3s ease-out;
+    transition-delay: 0.1s;
+  }
+  #gallery-43 .cs-hover-box-text {
+    /* 13px - 16px */
+    font-size: clamp(0.8125rem, 1vw, 1rem);
+    line-height: 1.5em;
+    margin: 0 auto;
+    max-width: 16.875rem;
+    color: #fff;
+    /* make starting position down 10px and invisible */
+    opacity: 0;
+    transform: translateY(0.625rem);
+    transition: opacity 0.3s, transform 0.3s ease-out;
+    transition-delay: 0.2s;
+  }
+}
+/* In Between - 600px */
+@media only screen and (min-width: 37.5rem) {
+  #gallery-43 .cs-image-group {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+  }
+  #gallery-43 .cs-item {
+    grid-column: span 6;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #gallery-43 .cs-item {
+    grid-column: span 4;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #gallery-43 .cs-title,
+  body.dark-mode #gallery-43 .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #gallery-43 .cs-text {
+    opacity: 0.8;
+  }
+}
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbs-1459,
+  #RPsbsr-1459 {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 1;
+  }
+  #RPsbs-1459 .cs-container,
+  #RPsbsr-1459 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #RPsbs-1459 .cs-content,
+  #RPsbsr-1459 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 32.625rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #RPsbs-1459 .cs-text,
+  #RPsbsr-1459 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #RPsbs-1459 .cs-text:last-of-type,
+  #RPsbsr-1459 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #RPsbs-1459 .cs-ul,
+  #RPsbsr-1459 .cs-ul {
+    width: 100%;
+    margin: 0 0 2rem 0;
+    padding-left: 1.25rem;
+    /* prevents padding from affecting width and height */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  #RPsbs-1459 .cs-li,
+  #RPsbsr-1459 .cs-li {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    list-style: none;
+    text-align: left;
+    width: 100%;
+    max-width: 25rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+    position: relative;
+  }
+  #RPsbs-1459 .cs-li:before,
+  #RPsbsr-1459 .cs-li:before {
+    /* bullet */
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 0.625rem;
+    left: -0.9375rem;
+  }
+  #RPsbs-1459 .cs-button-solid,
+  #RPsbsr-1459 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #RPsbs-1459 .cs-button-solid:before,
+  #RPsbsr-1459 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #RPsbs-1459 .cs-button-solid:hover:before,
+  #RPsbsr-1459 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #RPsbs-1459 .cs-image-group,
+  #RPsbsr-1459 .cs-image-group {
+    /* scaling the font size with the view width, removed at desktop */
+    font-size: min(2.23vw, .83em);
+    /* using ems so we can use font size to scale the whole section */
+    width: 40.625em;
+    height: 45.5625em;
+    position: relative;
+  }
+  #RPsbs-1459 .cs-picture,
+  #RPsbsr-1459 .cs-picture {
+    border-radius: 1.5em;
+    /* clips img tag corners */
+    overflow: hidden;
+    position: absolute;
+    display: block;
+  }
+  #RPsbs-1459 .cs-picture img,
+  #RPsbsr-1459 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act like a background image */
+    object-fit: cover;
+  }
+  #RPsbs-1459 .cs-picture1,
+  #RPsbsr-1459 .cs-picture1 {
+    width: 32.625em;
+    height: 45.5625em;
+    left: 0;
+    top: 0;
+  }
+  #RPsbs-1459 .cs-picture2,
+  #RPsbsr-1459 .cs-picture2 {
+    width: 23.625em;
+    height: 28.75em;
+    right: 0;
+    bottom: 6.25em;
+  }
+  #RPsbs-1459 .cs-background,
+  #RPsbsr-1459 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #RPsbs-1459 .cs-background:before,
+  #RPsbsr-1459 .cs-background:before {
+    /* background color overlay */
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    /* prevents the mouse from interacting with it */
+    pointer-events: none;
+    opacity: 0.94;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #RPsbs-1459 .cs-background img,
+  #RPsbsr-1459 .cs-background img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #RPsbs-1459 .cs-container,
+  #RPsbsr-1459 .cs-container {
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 3.25rem;
+  }
+  #RPsbs-1459 .cs-content,
+  #RPsbsr-1459 .cs-content {
+    width: 40%;
+    padding: 3rem 0;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    align-self: center;
+  }
+  #RPsbs-1459 .cs-image-group,
+  #RPsbsr-1459 .cs-image-group {
+    font-size: 1rem;
+    width: 50vw;
+    max-width: 40.625rem;
+    height: auto;
+    /* 580px - 729px */
+    min-height: clamp(36.25rem, 50vw, 45.5625rem);
+    flex: none;
+    display: flex;
+  }
+  #RPsbs-1459 .cs-picture1,
+  #RPsbsr-1459 .cs-picture1 {
+    width: 83%;
+    height: auto;
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+  #RPsbs-1459 .cs-picture2,
+  #RPsbsr-1459 .cs-picture2 {
+    width: 60%;
+    height: 57%;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #RPsbs-1459 .cs-title,
+  body.dark-mode #RPsbsr-1459 .cs-title,
+  body.dark-mode #RPsbs-1459 .cs-text,
+  body.dark-mode #RPsbsr-1459 .cs-text,
+  body.dark-mode #RPsbs-1459 .cs-li,
+  body.dark-mode #RPsbsr-1459 .cs-li {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #RPsbs-1459 .cs-title:before,
+  body.dark-mode #RPsbsr-1459 .cs-title:before,
+  body.dark-mode #RPsbs-1459 .cs-text:before,
+  body.dark-mode #RPsbsr-1459 .cs-text:before,
+  body.dark-mode #RPsbs-1459 .cs-li:before,
+  body.dark-mode #RPsbsr-1459 .cs-li:before {
+    background-color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #RPsbs-1459 .cs-background:before,
+  body.dark-mode #RPsbsr-1459 .cs-background:before {
+    background-color: var(--dark);
+  }
+}
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbsr-1459 .cs-picture1 {
+    left: auto;
+    right: 0;
+  }
+  #RPsbsr-1459 .cs-picture2 {
+    right: auto;
+    left: 0;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #RPsbsr-1459 .cs-image-group {
+    justify-content: flex-end;
+    /* sends it to the right in the 2nd position */
+    order: 2;
+  }
+}
